@@ -5,6 +5,10 @@
   "username": "postgres",
   "password": "agenda",
   "database": "agenda_padrao",
+"entities":[
+  "./src/models/*.ts"
+],
+
   "migrations" : [
   "./src/database/migrations/*.ts"
   ],
