@@ -25,9 +25,9 @@ try{
 
     const createAppointment = new CreateAppointmentService();
 
-    const appointment = await createAppointment.execute({date:parsedDate,provider});
+  // const appointment = await createAppointment.execute({date:parsedDate,provider});
     
-    return response.json(appointment);
+    return response.json();
 }catch(err){
     return response.status(400).json({error:err.message});
 }
